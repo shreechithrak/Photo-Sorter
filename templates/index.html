@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Start Button</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.start-text {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.start-button {
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px; /* Make the button round */
+    transition: background-color 0.3s ease;
+}
+
+.start-button:hover {
+    background-color: #45a049;
+}
+
+/* Add some shadow effect to the button */
+.start-button:focus,
+.start-button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Smooth transition for the button */
+.start-button {
+    transition: transform 0.2s ease;
+}
+
+.start-button:hover {
+    transform: translateY(-2px);
+}
+
+
+</style>
+</head>
+<body>
+<div class="container">
+    <h1 class="start-text">Click "Start" to begin</h1>
+    <button class="start-button" onclick="startFunction()">Start</button>
+</div>
+
+<script>
+    function startFunction() {
+        // Navigate to another page
+        window.location.href = "2.html";
+    }
+</script>
+</body>
+</html>
